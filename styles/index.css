@@ -1,0 +1,79 @@
+body {
+  background: #000000;
+  width: 1440px;
+  height: 810px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+nav {
+  width: 80%;
+  height: 58px;
+  margin: 8px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  color: white;
+  font: 400 24px/36px "Actor", sans-serif;
+  margin-right: 6%;
+}
+nav ul {
+  width: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.head {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.head .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+.head .text h1 {
+  color: #ffffff;
+  text-align: left;
+  font: 500 84px/102px "Poppins", sans-serif;
+}
+.head .text p {
+  color: #ffffff;
+  text-align: left;
+  font: 400 22px/34px "Source Sans Pro", sans-serif;
+  position: relative;
+  width: 410px;
+  height: 98px;
+}
