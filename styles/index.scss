@@ -2,7 +2,7 @@
 @import "image";
 
 nav {
-  width: 80%;
+  width: $main-width;
   height: 58px;
   margin: 8px auto;
   display: flex;
@@ -23,20 +23,26 @@ nav {
     }
   }
 }
-
+main {
+  text-align: center;
+}
 .head {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
   .text {
     display: flex;
     flex-direction: column;
     -ms-flex-align: center;
     align-items: flex-start;
-    h1 {
+    h2 {
       color: $main-color;
       text-align: left;
       font: 500 84px/102px "Poppins", sans-serif;
@@ -44,10 +50,74 @@ nav {
     p {
       color: $main-color;
       text-align: left;
-      font: 400 22px/34px "Source Sans Pro", sans-serif;
+
       position: relative;
       width: 410px;
       height: 98px;
     }
   }
+}
+
+@media screen and (max-width: 400px) {
+  .imag {
+    width: 15%;
+    text-align: center;
+    // font-size: 48%;
+  }
+  nav ul li a {
+    max-width: 50%;
+    font-size: 100%;
+
+    text-align: center;
+  }
+  .text {
+    max-width: 62%;
+    text-align: center;
+  }
+  .head .text h2 {
+    max-width: 50%;
+    font: 200 60px/20px "Poppins", sans-serif;
+    text-align: center;
+  }
+  .head .text p {
+    max-width: 62%;
+    margin-bottom: 20%;
+    // font-size: 50%;
+    font: 200 20px/30px "Source Sans Pro", sans-serif;
+  }
+}
+
+// ipad
+@media screen and (min-width: 401) and (max-width: 768px) {
+  main {
+    max-width: 50%;
+  }
+  .imag {
+    width: 50%;
+    text-align: center;
+    // font-size: 48%;
+  }
+  nav ul li a {
+    max-width: 50%;
+    font-size: 100%;
+
+    text-align: center;
+  }
+  .text {
+    max-width: 62%;
+    text-align: center;
+  }
+  .head .text h2 {
+    max-width: 50%;
+    font: 200 60px/20px "Poppins", sans-serif;
+    text-align: center;
+  }
+  .head .text p {
+    max-width: 62%;
+    margin-bottom: 20%;
+    // font-size: 50%;
+    font: 200 20px/30px "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (min-width: 769) and (max-width: 768px) {
 }
