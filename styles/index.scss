@@ -162,8 +162,8 @@ main {
     margin-right: 6%;
   }
   .head {
-    max-width: 100%;
-    margin-top: 25%;
+    width: 90%;
+    margin-top: -3%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -172,12 +172,7 @@ main {
     height: auto;
     margin-bottom: 10%;
   }
-  .head {
-    width: 90%;
-    margin-top: -3%;
-    display: flex;
-    flex-wrap: wrap;
-  }
+
   nav ul li {
     display: block;
     padding: -5px;
