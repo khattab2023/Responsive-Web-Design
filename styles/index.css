@@ -1,6 +1,7 @@
 body {
   background: #000000;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
 }
@@ -9,8 +10,12 @@ nav {
   width: 90%;
   height: 58px;
   margin: 8px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav .logo {
   color: #ffffff;
@@ -19,9 +24,13 @@ nav .logo {
 }
 nav ul {
   width: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 nav ul a {
   text-decoration: none;
@@ -37,15 +46,29 @@ main {
 .head {
   width: 85%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .head .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .head .text h2 {
   color: #ffffff;
@@ -61,33 +84,49 @@ main {
   height: 98px;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 320px) {
   .main {
     max-width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .imag {
     width: 100%;
   }
   nav {
     max-width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .head {
     max-width: 100%;
     margin-top: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 20%;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   nav ul li a {
     max-width: 100%;
     font-size: 78%;
   }
   .head .text {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .head .text h2 {
     width: 80%;
@@ -105,7 +144,9 @@ main {
 @media screen and (max-width: 768px) {
   .main {
     max-width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .img {
     max-width: 50%;
@@ -113,21 +154,29 @@ main {
   }
   nav {
     max-width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .head {
     max-width: 100%;
     margin-top: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   nav ul li a {
     max-width: 100%;
     font-size: 78%;
   }
   .head .text {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 73%;
   }
   .head .text h2 {
@@ -144,14 +193,20 @@ main {
     text-align: center;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 2280px) {
   nav {
     width: 95%;
     height: 58px;
     margin: 8px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 90%;
   }
   .logo {
@@ -162,8 +217,11 @@ main {
   .head {
     width: 90%;
     margin-top: -3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .img {
     width: 50%;
@@ -175,14 +233,22 @@ main {
     padding: -5px;
   }
   nav ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .head .text {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .head .text h2 {
     width: 80%;
@@ -190,65 +256,9 @@ main {
     text-align: left;
   }
   .head .text p {
-    width: 100%;
+    display: block;
+    width: 70%;
     font: 400 22px/34px "Source Sans Pro", sans-serif;
     text-align: left;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 2280px) {
-  nav {
-    width: 95%;
-    height: 58px;
-    margin: 8px auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90%;
-  }
-  .logo {
-    color: #ffffff;
-    font: 400 24px/36px "Actor", sans-serif;
-    margin-right: 6%;
-  }
-  .head {
-    max-width: 100%;
-    margin-top: 25%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 10%;
-  }
-  .head {
-    width: 90%;
-    margin-top: -3%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  nav ul li {
-    display: block;
-    padding: -5px;
-  }
-  nav ul li a {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-  }
-  .head .text {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-  }
-  .head .text h2 {
-    width: 80%;
-    font: 500 84px/102px "Poppins", sans-serif;
-    text-align: left;
-  }
-  .head .text p {
-    width: 65%;
-    font: 400 30px/34px "Source Sans Pro", sans-serif;
-    text-align: left;
-  }
-}/*# sourceMappingURL=index.css.map */

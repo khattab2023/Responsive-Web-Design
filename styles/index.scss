@@ -59,6 +59,9 @@ main {
     }
   }
 }
+img {
+  max-width: 100%;
+}
 // phone
 @media screen and (min-width: 320px) {
   .main {
@@ -146,7 +149,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 2280px) {
   nav {
     width: 95%;
     height: 58px;
@@ -193,66 +196,9 @@ main {
     text-align: left;
   }
   .head .text p {
-    width: 100%;
+    display: block;
+    width: 70%;
     font: 400 22px/34px "Source Sans Pro", sans-serif;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1440px) and (max-width: 2280px) {
-  nav {
-    width: 95%;
-    height: 58px;
-    margin: 8px auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90%;
-  }
-  .logo {
-    color: $main-color;
-    font: 400 24px/36px "Actor", sans-serif;
-    margin-right: 6%;
-  }
-  .head {
-    max-width: 100%;
-    margin-top: 25%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 10%;
-  }
-  .head {
-    width: 90%;
-    margin-top: -3%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  nav ul li {
-    display: block;
-    padding: -5px;
-  }
-  nav ul li a {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-  }
-  .head .text {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-  }
-  .head .text h2 {
-    width: 80%;
-    font: 500 84px/102px "Poppins", sans-serif;
-    text-align: left;
-  }
-  .head .text p {
-    width: 65%;
-    font: 400 30px/34px "Source Sans Pro", sans-serif;
     text-align: left;
   }
 }
