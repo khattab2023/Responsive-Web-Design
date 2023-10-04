@@ -18,23 +18,34 @@ nav {
     margin-right: 6%;
   }
   ul {
-    width: 18vh;
+    width: 27vh;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     a {
+      font: 400 18px/36px "Actor", sans-serif;
       text-decoration: none;
       color: $main-color;
-      font-size: 22px;
       padding: 10px;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+    }
+    a:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      background-color: rgba(255, 255, 0, 0.665);
+      border-radius: 4px;
+      transition: all 0.1s ease-in-out;
+      // transition-delay: 0.2s;
     }
   }
 }
+
 main {
   text-align: center;
 }
 .head {
-  width: 85%;
+  width: $main-width;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -151,19 +162,19 @@ img {
 
 @media screen and (min-width: 1024px) and (max-width: 2280px) {
   nav {
-    width: 95%;
+    width: 90%;
     height: 58px;
     margin: 8px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: flex-start;
   }
   .logo {
     color: $main-color;
     font: 400 24px/36px "Actor", sans-serif;
     margin-right: 6%;
   }
+
   .head {
     width: 90%;
     margin-top: -3%;
@@ -184,6 +195,7 @@ img {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    font-size: 22px;
   }
   .head .text {
     width: 50%;
